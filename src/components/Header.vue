@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <a href="/" class="logo">List News</a>
+    <router-link to="/" class="logo">List News</router-link>
     <h2 class='news-title'>{{this.$store.state.title}}</h2>
     <div class="header-right">
       <a class="active" href="/">Home</a>

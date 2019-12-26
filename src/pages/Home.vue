@@ -92,6 +92,7 @@ export default {
 
   async beforeMount() {
     this.$store.commit('newTitle', '')
+    document.title = 'List News - Home'
     this.newsList = await this.init();
     this.loader = false;
   }
@@ -163,7 +164,7 @@ input {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 2s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
@@ -177,7 +178,7 @@ input {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 0.3s;
 }
 .fade-enter,
 .fade-leave-to {
@@ -201,7 +202,7 @@ input {
 }
 .list-enter-active,
 .list-leave-active {
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .list-enter,
 .list-leave-to {
