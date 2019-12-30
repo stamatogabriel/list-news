@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 <template>
   <div class="root">
     <top-header />
@@ -73,6 +74,8 @@ export default {
       const response = await this.$http.get(
         "https://newsapi.org/v2/top-headlines?country=us&apiKey=b04a014e29a04ab3910afc8ce3cbdfd2"
       );
+      // eslint-disable-next-line no-console
+      console.log(response)
       return response.body.articles;
     },
 
